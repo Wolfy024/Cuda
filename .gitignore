@@ -1,0 +1,6 @@
+objects/
+*.o
+*.out
+*.exe
+*.log
+__pycache__/
