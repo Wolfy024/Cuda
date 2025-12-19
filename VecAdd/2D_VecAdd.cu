@@ -45,5 +45,8 @@ int main(){
         }
         std::cout << '\n';
     }
+    cudaFree(d_A);
+    cudaFree(d_B);
+    cudaFree(d_C);
     return 0;
 }
