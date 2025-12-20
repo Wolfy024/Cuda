@@ -27,9 +27,8 @@ __global__ void VecMult(float* A, float* B, float* C)
         __syncthreads();
         for(int k = 0; k < TILE; k++) value += sh_A[ty][k]  * sh_B[k][tx];
         __syncthreads();
-        C[i * N + j] = value;
-
     }
+        C[i * N + j] = value;
 }
 
 int main(){
