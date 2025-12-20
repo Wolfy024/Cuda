@@ -9,7 +9,7 @@
 #define TILES 2
 
 
-// A weird Case. 
+// A weird case. 
 // Bank Conflicts. Transposed matrix mult introduced Bank conflicts which got fixed by padding.
 // But due to additional operations in this version. It's actually slower than normal version by about 2x.
 // Probably will get to know more, once we proceed.
