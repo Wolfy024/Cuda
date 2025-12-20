@@ -2,9 +2,9 @@
 #include <iostream>
 #include <random>
 
-#define M 4 // Row of Matrix A
-#define K 4 // Col of Matrix A, Row of Matrix B
-#define N 4 // Col of Matrix B
+#define M 8 // Row of Matrix A
+#define K 5 // Col of Matrix A, Row of Matrix B
+#define N 8 // Col of Matrix B
 
 #define TILE 2
 
