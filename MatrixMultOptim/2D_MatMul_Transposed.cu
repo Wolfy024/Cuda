@@ -46,9 +46,11 @@ __global__ void matMulC(float * A, float * B, float * C){
             Bs[tx][ty] = 0.0f;
         }
         __syncthreads();
+        #pragma unroll
         for (int i = 0; i<TILES; i++){
             val += As[ty][i] * Bs[tx][i];
         }
+        __syncthreads();
     }
     if (row < M && col < N)
     {
